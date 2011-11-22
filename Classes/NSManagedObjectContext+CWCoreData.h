@@ -64,8 +64,12 @@ typedef enum {
  */
 +(void)removeThreadLocalContext;
 
++(void)threadWillExit:(NSNotification*)notification;
+
 
 -(BOOL)isThreadLocalContext;
++(void)managedObjectContextDidSave:(NSNotification*)notification;
++(void)mergeChangesFromContextDidSaveNotification:(NSNotification*)notification;
 
 /*!
  * @abstract Call save:, 

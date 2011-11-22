@@ -57,10 +57,7 @@
                                                         sortDescriptors:sortDescriptors];
     // Edit the entity name as appropriate.
     [fetchRequest setFetchBatchSize:20];
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest 
-                                                                                                managedObjectContext:[NSManagedObjectContext threadLocalContext] 
-                                                                                                  sectionNameKeyPath:keyPath 
-                                                                                                           cacheName:nil];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:[NSManagedObjectContext threadLocalContext] sectionNameKeyPath:keyPath cacheName:nil];
     
 	return [aFetchedResultsController autorelease];	
 }
