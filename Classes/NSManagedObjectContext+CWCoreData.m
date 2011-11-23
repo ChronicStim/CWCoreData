@@ -156,6 +156,10 @@ static NSMutableDictionary* _managedObjectContexts = nil;
             	option = [NSThread isMainThread] ? NSManagedObjectContextCWSaveFailureOptionRollback : NSManagedObjectContextCWSaveFailureOptionReset;
             }
         	switch (option) {
+                case NSManagedObjectContextCWSaveFailureOptionNone:
+                    break;
+                case NSManagedObjectContextCWSaveFailureOptionThreadDefault:
+                    break;
             	case NSManagedObjectContextCWSaveFailureOptionRollback:
                     NSLog(@"Did rollback context for error: %@", localError);
                     [self rollback];
