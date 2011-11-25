@@ -82,5 +82,6 @@ typedef enum {
 
 -(NSUInteger)objectCountForEntityName:(NSString*)entityName withPredicate:(NSPredicate*)predicate;
 -(NSArray*)objectsForEntityName:(NSString*)entityName withPredicate:(NSPredicate*)predicate sortDescriptors:(NSArray*)sortDescriptors;
+-(NSArray*)objectIDsForEntityName:(NSString*)entityName withPredicate:(NSPredicate*)predicate sortDescriptors:(NSArray*)sortDescriptors;
 
 @end

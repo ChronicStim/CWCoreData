@@ -157,6 +157,7 @@ static NSMutableDictionary* _managedObjectContexts = nil;
             }
         	switch (option) {
                 case NSManagedObjectContextCWSaveFailureOptionNone:
+                    NSLog(@"Did save context for error: %@", localError);
                     break;
                 case NSManagedObjectContextCWSaveFailureOptionThreadDefault:
                     break;
@@ -240,6 +241,21 @@ static NSMutableDictionary* _managedObjectContexts = nil;
     NSFetchRequest* request = [NSFetchRequest requestForEntityName:entityName
                                                      withPredicate:predicate
                                                    sortDescriptors:sortDescriptors];
+    NSError* error = nil;
+    NSArray* objects = [self executeFetchRequest:request error:&error];
+    if (error) {
+        NSLog(@"%@", error);
+    }
+    return objects;
+}
+
+-(NSArray*)objectIDsForEntityName:(NSString*)entityName withPredicate:(NSPredicate*)predicate sortDescriptors:(NSArray*)sortDescriptors;
+{
+    NSFetchRequest* request = [NSFetchRequest requestForEntityName:entityName
+                                                     withPredicate:predicate
+                                                   sortDescriptors:sortDescriptors];
+    [request setResultType:NSManagedObjectIDResultType];
+    
     NSError* error = nil;
     NSArray* objects = [self executeFetchRequest:request error:&error];
     if (error) {
