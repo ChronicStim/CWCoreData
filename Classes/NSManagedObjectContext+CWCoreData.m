@@ -39,7 +39,7 @@ static NSMutableDictionary* _managedObjectContexts = nil;
 
 +(void)load;
 {
-	_managedObjectContexts = [[NSMutableDictionary alloc] initWithCapacity:8];
+	_managedObjectContexts = [[NSMutableDictionary alloc] initWithCapacity:20];
 }
 
 + (NSValue*)threadKey;
@@ -69,7 +69,7 @@ static NSMutableDictionary* _managedObjectContexts = nil;
             context = [[NSManagedObjectContext alloc] init];
             [context setPersistentStoreCoordinator: coordinator];
 			if ([[NSThread currentThread] isMainThread]) {
-				[context setMergePolicy:NSErrorMergePolicy];
+				[context setMergePolicy:NSMergeByPropertyStoreTrumpMergePolicy];
 			} else {
 				[context setMergePolicy:NSMergeByPropertyObjectTrumpMergePolicy];
 			}
