@@ -492,11 +492,13 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_SEARCH_PATHS = (
+					"\"$(PROJECT)/../Resources\"/**",
 					"$(inherited)",
 					"\"$(SRCROOT)/../CWFoundation/build/Release-iphoneos\"",
 				);
 				PRODUCT_NAME = CWCoreData;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)/../CWFoundation/build/Release-iphoneos\"";
 			};
 			name = Debug;
 		};
@@ -509,11 +511,13 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_SEARCH_PATHS = (
+					"\"$(PROJECT)/../Resources\"/**",
 					"$(inherited)",
 					"\"$(SRCROOT)/../CWFoundation/build/Release-iphoneos\"",
 				);
 				PRODUCT_NAME = CWCoreData;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)/../CWFoundation/build/Release-iphoneos\"";
 			};
 			name = Release;
 		};
