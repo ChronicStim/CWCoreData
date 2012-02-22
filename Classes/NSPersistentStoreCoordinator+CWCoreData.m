@@ -131,7 +131,7 @@ static NSPersistentStoreCoordinator* _persistentStoreCoordinator = nil;
                 
                 // If not compatible, then need to try to migrate using the workaround process.
                 BOOL migrationWorkaroundHasBeenRun = NO;
-                BOOL migrationWorkaroundSucceeded = NO;
+                //BOOL migrationWorkaroundSucceeded = NO;
                 if (!pscCompatibile) {
                     
                     while (!migrationWorkaroundHasBeenRun) {
@@ -172,11 +172,11 @@ static NSPersistentStoreCoordinator* _persistentStoreCoordinator = nil;
                         NSError *error = nil;
                         if (![dummyPSC addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:options error:&error]) {
                             NSLog(@"Core Data Error:%@ : %@",[error localizedDescription],[error userInfo]);
-                            migrationWorkaroundSucceeded = NO;
+                           // migrationWorkaroundSucceeded = NO;
                             NSString *message = [NSString stringWithFormat:@"%@ to %@ migration for store: %@. Failed workaround.",lastVersionRun,versionString,filename];
                             NSLog(@"Failed to resolve migration issue. %@",message);
                         } else {
-                            migrationWorkaroundSucceeded = YES;
+                            //migrationWorkaroundSucceeded = YES;
                             NSString *message = [NSString stringWithFormat:@"%@ to %@ migration for store: %@. Migration workaround succeeded.",lastVersionRun,versionString,filename];
                             NSLog(@"Migration issue resolved. %@",message);
                         }                        
