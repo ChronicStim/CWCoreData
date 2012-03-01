@@ -115,13 +115,18 @@ static NSMutableDictionary* _managedObjectContexts = nil;
 
 +(void)managedObjectContextDidSave:(NSNotification*)notification;
 {
-	for (NSValue* threadKey in [_managedObjectContexts allKeys]) {
-		NSThread* thread = (NSThread*)[threadKey pointerValue];
-        if (thread != [NSThread currentThread]) {
-			[self performSelector:@selector(mergeChangesFromContextDidSaveNotification:) 
-                         onThread:thread 
-                       withObject:notification 
-                    waitUntilDone:NO];
+//    NSLog(@"saving MOC allKeys = %@",[_managedObjectContexts allKeys]);
+    NSArray *threadKeys = [_managedObjectContexts allKeys];
+    int threadCount = [threadKeys count];
+    for (int i=0; i<threadCount; i++) {
+        if (NULL != [threadKeys objectAtIndex:i]) {
+            NSThread* thread = (NSThread*)[[threadKeys objectAtIndex:i] pointerValue];
+            if (thread != [NSThread currentThread]) {
+                [self performSelector:@selector(mergeChangesFromContextDidSaveNotification:) 
+                             onThread:thread 
+                           withObject:notification 
+                        waitUntilDone:NO];
+            }
         }
     }
 }
