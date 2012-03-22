@@ -266,4 +266,22 @@ static NSMutableDictionary* _managedObjectContexts = nil;
     return objects;
 }
 
+-(NSFetchRequest *)fetchRequestForEntityName:(NSString*)entityName withPredicate:(NSPredicate*)predicate sortDescriptors:(NSArray*)sortDescriptors;
+{
+    NSFetchRequest* request = [NSFetchRequest requestForEntityName:entityName
+                                                     withPredicate:predicate
+                                                   sortDescriptors:sortDescriptors];
+    return request;
+}
+
+-(NSArray *)executeFetchRequest:(NSFetchRequest *)request;
+{
+    NSError* error = nil;
+    NSArray* objects = [self executeFetchRequest:request error:&error];
+    if (error) {
+        NSLog(@"%@", error);
+    }
+    return objects;
+}
+
 @end
