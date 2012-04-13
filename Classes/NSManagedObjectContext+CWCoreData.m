@@ -39,7 +39,7 @@ static NSMutableDictionary* _managedObjectContexts = nil;
 
 +(void)load;
 {
-	_managedObjectContexts = [[NSMutableDictionary alloc] initWithCapacity:20];
+	_managedObjectContexts = [[NSMutableDictionary alloc] initWithCapacity:5];
 }
 
 + (NSValue*)threadKey;
