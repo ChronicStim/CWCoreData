@@ -21,17 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		A61084BD136EE13A00D42782 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A61084A5136EE0F700D42782 /* main.m */; };
-		A61084BE136EE13B00D42782 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61084A6136EE0F700D42782 /* MainWindow.xib */; };
-		A61084BF136EE13C00D42782 /* RSSFeed.translation in Resources */ = {isa = PBXBuildFile; fileRef = A61084A7136EE0F700D42782 /* RSSFeed.translation */; };
-		A61084C0136EE13D00D42782 /* RSSFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A61084A9136EE0F700D42782 /* RSSFeedTableViewController.m */; };
-		A61084C1136EE13D00D42782 /* SampleAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A61084AB136EE0F700D42782 /* SampleAppAppDelegate.m */; };
-		A61084C7136EE19800D42782 /* libCWCoreData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* libCWCoreData.a */; };
 		A61084C8136EE19800D42782 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A61A0043130962ED0039330C /* CoreData.framework */; };
 		A61084C9136EE19800D42782 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		A61084CB136EE19800D42782 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A61084CA136EE19800D42782 /* UIKit.framework */; };
-		A6108530136EE1F900D42782 /* RSSItem.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = A610852F136EE1F900D42782 /* RSSItem.xcdatamodel */; };
-		A6108533136EE2F800D42782 /* RSSItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A6108532136EE2F800D42782 /* RSSItem.m */; };
 		A616BE4A142A540B0052C622 /* libCWFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A616BE33142A53A60052C622 /* libCWFoundation.a */; };
 		A61A0036130962DD0039330C /* CWCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = A61A0029130962DD0039330C /* CWCoreData.h */; };
 		A61A0037130962DD0039330C /* NSEntityDescription+CWCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = A61A002A130962DD0039330C /* NSEntityDescription+CWCoreData.h */; };
@@ -110,19 +102,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A61084A5136EE0F700D42782 /* main.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A61084A6136EE0F700D42782 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		A61084A7136EE0F700D42782 /* RSSFeed.translation */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = text; path = RSSFeed.translation; sourceTree = "<group>"; };
-		A61084A8136EE0F700D42782 /* RSSFeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = RSSFeedTableViewController.h; sourceTree = "<group>"; };
-		A61084A9136EE0F700D42782 /* RSSFeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = RSSFeedTableViewController.m; sourceTree = "<group>"; };
-		A61084AA136EE0F700D42782 /* SampleAppAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = SampleAppAppDelegate.h; sourceTree = "<group>"; };
-		A61084AB136EE0F700D42782 /* SampleAppAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = SampleAppAppDelegate.m; sourceTree = "<group>"; };
-		A61084AC136EE0F700D42782 /* PersistedXMLTranslator-Info.plist */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = text.plist.xml; path = "PersistedXMLTranslator-Info.plist"; sourceTree = "<group>"; };
 		A61084B6136EE11800D42782 /* PersistedXMLTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersistedXMLTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A61084CA136EE19800D42782 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A610852F136EE1F900D42782 /* RSSItem.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = RSSItem.xcdatamodel; sourceTree = "<group>"; };
-		A6108531136EE2F800D42782 /* RSSItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSItem.h; sourceTree = "<group>"; };
-		A6108532136EE2F800D42782 /* RSSItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSItem.m; sourceTree = "<group>"; };
 		A61A0029130962DD0039330C /* CWCoreData.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = CWCoreData.h; path = Classes/CWCoreData.h; sourceTree = "<group>"; };
 		A61A002A130962DD0039330C /* NSEntityDescription+CWCoreData.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = "NSEntityDescription+CWCoreData.h"; path = "Classes/NSEntityDescription+CWCoreData.h"; sourceTree = "<group>"; };
 		A61A002B130962DD0039330C /* NSEntityDescription+CWCoreData.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = "NSEntityDescription+CWCoreData.m"; path = "Classes/NSEntityDescription+CWCoreData.m"; sourceTree = "<group>"; };
@@ -152,7 +133,6 @@
 				A61084C9136EE19800D42782 /* Foundation.framework in Frameworks */,
 				A61084CB136EE19800D42782 /* UIKit.framework in Frameworks */,
 				A616BE4A142A540B0052C622 /* libCWFoundation.a in Frameworks */,
-				A61084C7136EE19800D42782 /* libCWCoreData.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +163,6 @@
 				A61A00BA1309695D0039330C /* README */,
 				A61A0067130963F30039330C /* CWFoundation.xcodeproj */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
-				A61084A3136EE0F700D42782 /* Sample Classes */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
@@ -218,48 +197,6 @@
 				A61A0033130962DD0039330C /* NSManagedObjectModel+CWCoreData.m */,
 			);
 			name = Classes;
-			sourceTree = "<group>";
-		};
-		A61084A3136EE0F700D42782 /* Sample Classes */ = {
-			isa = PBXGroup;
-			children = (
-				A61084A4136EE0F700D42782 /* PersistedXMLTranslator */,
-			);
-			path = "Sample Classes";
-			sourceTree = "<group>";
-		};
-		A61084A4136EE0F700D42782 /* PersistedXMLTranslator */ = {
-			isa = PBXGroup;
-			children = (
-				A61085DF136EEBD900D42782 /* Model */,
-				A61085E0136EEBDF00D42782 /* Controller */,
-				A61084A5136EE0F700D42782 /* main.m */,
-				A61084A6136EE0F700D42782 /* MainWindow.xib */,
-				A61084AC136EE0F700D42782 /* PersistedXMLTranslator-Info.plist */,
-			);
-			path = PersistedXMLTranslator;
-			sourceTree = "<group>";
-		};
-		A61085DF136EEBD900D42782 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A610852F136EE1F900D42782 /* RSSItem.xcdatamodel */,
-				A6108531136EE2F800D42782 /* RSSItem.h */,
-				A6108532136EE2F800D42782 /* RSSItem.m */,
-				A61084A7136EE0F700D42782 /* RSSFeed.translation */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		A61085E0136EEBDF00D42782 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				A61084A8136EE0F700D42782 /* RSSFeedTableViewController.h */,
-				A61084A9136EE0F700D42782 /* RSSFeedTableViewController.m */,
-				A61084AA136EE0F700D42782 /* SampleAppAppDelegate.h */,
-				A61084AB136EE0F700D42782 /* SampleAppAppDelegate.m */,
-			);
-			name = Controller;
 			sourceTree = "<group>";
 		};
 		A616BE2B142A53A60052C622 /* Products */ = {
@@ -410,8 +347,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A61084BE136EE13B00D42782 /* MainWindow.xib in Resources */,
-				A61084BF136EE13C00D42782 /* RSSFeed.translation in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,11 +373,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A61084BD136EE13A00D42782 /* main.m in Sources */,
-				A61084C0136EE13D00D42782 /* RSSFeedTableViewController.m in Sources */,
-				A61084C1136EE13D00D42782 /* SampleAppAppDelegate.m in Sources */,
-				A6108530136EE1F900D42782 /* RSSItem.xcdatamodel in Sources */,
-				A6108533136EE2F800D42782 /* RSSItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,43 +413,46 @@
 		1DEB921F08733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/CWCoreData.dst;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../CWFoundation/**";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../CWFoundation/**";
 				INSTALL_PATH = /usr/local/lib;
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(PROJECT)/../Resources\"/**",
-					"$(inherited)",
-					"\"$(SRCROOT)/../CWFoundation/build/Release-iphoneos\"",
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = (
+					"-lstdc++",
+					"-falign-loops=16",
 				);
 				PRODUCT_NAME = CWCoreData;
-				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)/../CWFoundation/build/Release-iphoneos\"";
+				SEPARATE_STRIP = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		1DEB922008733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/CWCoreData.dst;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../CWFoundation/**";
 				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../CWFoundation/**";
 				INSTALL_PATH = /usr/local/lib;
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(PROJECT)/../Resources\"/**",
-					"$(inherited)",
-					"\"$(SRCROOT)/../CWFoundation/build/Release-iphoneos\"",
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = (
+					"-lstdc++",
+					"-falign-loops=16",
 				);
 				PRODUCT_NAME = CWCoreData;
-				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)/../CWFoundation/build/Release-iphoneos\"";
+				SEPARATE_STRIP = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -531,16 +464,23 @@
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_CFLAGS = "-falign-loops=16";
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "../CWFoundation/**";
+				SEPARATE_STRIP = YES;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -551,16 +491,24 @@
 					armv6,
 					"$(ARCHS_STANDARD_32_BIT)",
 				);
+				DEPLOYMENT_POSTPROCESSING = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_CFLAGS = "-falign-loops=16";
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "../CWFoundation/**";
+				SEPARATE_STRIP = YES;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = debugging;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
