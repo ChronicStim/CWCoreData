@@ -162,6 +162,7 @@ static NSMutableDictionary* _managedObjectContexts = nil;
                     NSLog(@"Did save context for error: %@", localError);
                     break;
                 case NSManagedObjectContextCWSaveFailureOptionThreadDefault:
+                    NSLog(@"Did follow ThreadDefault for error: %@",localError);
                     break;
             	case NSManagedObjectContextCWSaveFailureOptionRollback:
                     NSLog(@"Did rollback context for error: %@", localError);
